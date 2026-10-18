@@ -1,0 +1,21 @@
+[project]
+name = "python-telegram-downloader-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "saeed-payvandi", email = "saeedpayvandi82@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pytelegrambotapi>=4.37.0",
+    "python-decouple>=3.8",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+python-telegram-downloader-bot = "python_telegram_downloader_bot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
